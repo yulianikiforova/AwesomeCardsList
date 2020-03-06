@@ -1,0 +1,21 @@
+<mat-card class="card">
+  <img mat-card-image [src]="card.imageUrl" class="img">
+  <div class="card-content">
+    <div class="text">
+      <span>Name: </span>
+      <span class="value" matTooltip="{{ card.name }}">{{ card.name }}</span>
+    </div>
+    <div class="text">
+      <span>Text: </span>
+      <span class="value" matTooltip="{{ card.text }}">{{ card.text }}</span>
+    </div>
+    <div class="text">
+      <span>Set Name: </span>
+      <span class="value" matTooltip="{{ card.setName }}">{{ card.setName }}</span>
+    </div>
+    <div class="text">
+      <span>Type: </span>
+      <span class="value" matTooltip="{{ card.type }}">{{ card.type }}</span>
+    </div>
+  </div>
+</mat-card>

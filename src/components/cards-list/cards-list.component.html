@@ -1,0 +1,24 @@
+<mat-toolbar-row class="toolbar">
+  <input type="search"
+         (ngModelChange)="onSearch($event)"
+         [(ngModel)]="search"
+         placeholder="Search by name"
+         class="search-input">
+</mat-toolbar-row>
+<div class="cards-list"
+     infiniteScroll
+     [infiniteScrollDistance]="2"
+     [infiniteScrollThrottle]="150"
+     (scrolled)="onScrolled()">
+  <card class="card-container"
+        *ngFor="let card of cards; trackBy: trackByFn"
+        [card]="card">
+  </card>
+</div>
+<div *ngIf="!isLoading && cards.length === 0" class="no-cards">
+  No cards :(
+</div>
+<mat-progress-spinner class="loading-indicator"
+                      *ngIf="isLoading"
+                      mode="indeterminate">
+</mat-progress-spinner>

@@ -1,0 +1,30 @@
+.card {
+  height: 380px;
+  margin: 20px;
+  width: 180px;
+
+  .img {
+    margin: 0 0;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .card-content {
+    color: #333;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 5px;
+
+    .text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    .value {
+      font-weight: 300;
+    }
+  }
+}
