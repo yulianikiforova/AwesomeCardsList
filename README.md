@@ -1,5 +1,11 @@
 # HighspotExercise
 
+The application renders list of cards provided by [cards](https://api.elderscrollslegends.io/v1/cards) API. Implemented with "infinite scrolling" and searching cards by name.
+
+## Installing Angular CLI
+
+Run `npm install -g @angular/cli`.
+
 ## Installing dependencies
 
 Run `npm install`.
